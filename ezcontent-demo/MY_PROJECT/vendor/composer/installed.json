@@ -3037,11 +3037,10 @@
                     }
                 },
                 "patches_applied": {
+                    "Expose Layout Builder data to REST and JSON:API": "https://www.drupal.org/files/issues/2021-11-22/layout_builder-rebase_drupal_9_3_x-2942975-159.patch",
                     "Add reusable option to inline block creation": "https://www.drupal.org/files/issues/2021-03-18/reusable_inline_block_creation-2999491-66.patch",
                     "Add block classes for bundle and view mode": "https://www.drupal.org/files/issues/block_content-classes-2830725-2.patch",
-                    "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order / 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2021-11-18/1356276-675.patch",
-                    "Expose Layout Builder data to REST and JSON:API": "https://www.drupal.org/files/issues/2021-11-22/layout_builder-rebase_drupal_9_3_x-2942975-159.patch",
-                    "ImageItem should have a derivatives computed property, to expose all image style URLs": "https://www.drupal.org/files/issues/2021-07-09/2825812-240.patch"
+                    "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order / 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2021-11-18/1356276-675.patch"
                 }
             },
             "installation-source": "dist",
@@ -7028,8 +7027,8 @@
                     }
                 },
                 "patches_applied": {
-                    "3057523 - Load metatags asynchronously": "https://www.drupal.org/files/issues/2022-01-25/3057523-72-metatag-async-click-trigger-accessibility.patch",
-                    "Support JSON API, REST, GraphQL and custom normalizations": "https://www.drupal.org/files/issues/2020-02-23/2945817-87.patch"
+                    "Support JSON API, REST, GraphQL and custom normalizations": "https://www.drupal.org/files/issues/2020-02-23/2945817-87.patch",
+                    "3057523 - Load metatags asynchronously": "https://www.drupal.org/files/issues/2022-01-25/3057523-72-metatag-async-click-trigger-accessibility.patch"
                 }
             },
             "installation-source": "dist",

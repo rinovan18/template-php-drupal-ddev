@@ -1,0 +1,10 @@
+--- modules/image/src/Plugin/Field/FieldType/ImageItem.php
++++ modules/image/src/Plugin/Field/FieldType/ImageItem.php
+@@ -13,6 +13,7 @@
+ use Drupal\Core\TypedData\DataDefinition;
+ use Drupal\file\Entity\File;
+ use Drupal\file\Plugin\Field\FieldType\FileItem;
++use Drupal\image\Plugin\DataType\ImageStyleDerivativesDefinition;
+ 
+ /**
+  * Plugin implementation of the 'image' field type.

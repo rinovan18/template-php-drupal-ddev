@@ -1,0 +1,65 @@
+--- modules/media/tests/src/Functional/Rest/MediaResourceTestBase.php
++++ modules/media/tests/src/Functional/Rest/MediaResourceTestBase.php
+@@ -3,6 +3,7 @@
+ namespace Drupal\Tests\media\Functional\Rest;
+ 
+ use Drupal\Component\Utility\NestedArray;
++use Drupal\Core\Cache\Cache;
+ use Drupal\Core\Url;
+ use Drupal\file\Entity\File;
+ use Drupal\media\Entity\Media;
+@@ -136,6 +137,8 @@ protected function createEntity() {
+       ->setRevisionUserId(static::$auth ? $this->account->id() : 0)
+       ->save();
+ 
++    $this->config('image.settings')->set('suppress_itok_output', TRUE)->save(TRUE);
++
+     return $media;
+   }
+ 
+@@ -199,6 +202,23 @@ protected function getExpectedNormalizedEntity() {
+           'target_uuid' => $thumbnail->uuid(),
+           'title' => NULL,
+           'url' => $thumbnail->createFileUrl(FALSE),
++          'derivatives' => [
++            'large' => [
++              'url' => file_url_transform_relative(file_create_url('public://styles/large/public/media-icons/generic/generic.png')),
++              'height' => 180,
++              'width' => 180,
++            ],
++            'medium' => [
++              'url' => file_url_transform_relative(file_create_url('public://styles/medium/public/media-icons/generic/generic.png')),
++              'height' => 180,
++              'width' => 180,
++            ],
++            'thumbnail' => [
++              'url' => file_url_transform_relative(file_create_url('public://styles/thumbnail/public/media-icons/generic/generic.png')),
++              'height' => 100,
++              'width' => 100,
++            ],
++          ],
+         ],
+       ],
+       'status' => [
+@@ -454,6 +474,21 @@ protected function getExpectedNormalizedFileEntity() {
+     ];
+   }
+ 
++  /**
++   * {@inheritdoc}
++   */
++  protected function getExpectedCacheTags() {
++    return Cache::mergeTags(
++      parent::getExpectedCacheTags(),
++      [
++        'config:image_style_list',
++        'config:image.style.large',
++        'config:image.style.medium',
++        'config:image.style.thumbnail',
++      ]
++    );
++  }
++
+   /**
+    * {@inheritdoc}
+    */

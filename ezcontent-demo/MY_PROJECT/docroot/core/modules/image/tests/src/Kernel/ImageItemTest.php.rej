@@ -1,0 +1,11 @@
+--- modules/image/tests/src/Kernel/ImageItemTest.php
++++ modules/image/tests/src/Kernel/ImageItemTest.php
+@@ -129,7 +129,7 @@ public function testImageItem() {
+     $entity->save();
+ 
+     // Test image item properties.
+-    $expected = ['target_id', 'entity', 'alt', 'title', 'width', 'height'];
++    $expected = ['target_id', 'entity', 'alt', 'title', 'width', 'height', 'derivatives'];
+     $properties = $entity->getFieldDefinition('image_test')->getFieldStorageDefinition()->getPropertyDefinitions();
+     $this->assertEquals($expected, array_keys($properties));
+ 

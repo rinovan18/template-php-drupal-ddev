@@ -5,7 +5,7 @@
         'type' => 'composer-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '0aff6fcd71ca41218565752cd7f5ed0c64a07247',
+        'reference' => '9ce770dca80276633b16897b45d7a92ddfff2b9d',
         'name' => 'srijanone/ezcontent-project',
         'dev' => true,
     ),
@@ -2501,7 +2501,7 @@
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '0aff6fcd71ca41218565752cd7f5ed0c64a07247',
+            'reference' => '9ce770dca80276633b16897b45d7a92ddfff2b9d',
             'dev_requirement' => false,
         ),
         'srijanone/ezcontent_admin' => array(

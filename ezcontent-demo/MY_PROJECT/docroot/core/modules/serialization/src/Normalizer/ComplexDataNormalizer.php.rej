@@ -1,0 +1,10 @@
+--- modules/serialization/src/Normalizer/ComplexDataNormalizer.php
++++ modules/serialization/src/Normalizer/ComplexDataNormalizer.php
+@@ -26,6 +26,7 @@ class ComplexDataNormalizer extends NormalizerBase {
+    * {@inheritdoc}
+    */
+   public function normalize($object, $format = NULL, array $context = []) {
++    $this->addCacheableDependency($context, $object);
+     $attributes = [];
+     // $object will not always match $supportedInterfaceOrClass.
+     // @see \Drupal\serialization\Normalizer\EntityNormalizer

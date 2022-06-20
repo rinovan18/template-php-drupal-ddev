@@ -164,6 +164,12 @@ class ImageItem extends FileItem {
       ->setComputed(TRUE)
       ->setInternal(FALSE);
 
+    $properties['derivatives'] = ImageStyleDerivativesDefinition::create('image_style_derivatives')
+      ->setLabel(t('Derived images'))
+      ->setDescription(t('Images derived from the stored image, one per Image Style configured for this site. For each derived image, the URL, width and height are provided.'))
+      ->setComputed(TRUE)
+      ->setInternal(FALSE);
+
     return $properties;
   }
 

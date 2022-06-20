@@ -10,7 +10,7 @@ use Drupal\file\FileInterface;
 use Drupal\image\ImageStyleInterface;
 
 /**
- * A data type for image derivatives.
+ * Computed image style derivatives class.
  *
  * @ingroup typed_data
  * @see \Drupal\image\Entity\ImageStyle
@@ -18,7 +18,7 @@ use Drupal\image\ImageStyleInterface;
  * @DataType(
  *   id = "image_style_derivatives",
  *   label = @Translation("Image style derivatives"),
- *   definition_class = "\Drupal\image\TypedData\ImageStyleDerivativesDefinition",
+ *   definition_class = "\Drupal\image\Plugin\DataType\ImageStyleDerivativesDefinition",
  * )
  */
 class ComputedImageStyleDerivatives extends Map implements RefinableCacheableDependencyInterface {
@@ -77,15 +77,10 @@ class ComputedImageStyleDerivatives extends Map implements RefinableCacheableDep
 
   /**
    * @param \Drupal\file\FileInterface $file
-   *   The file entity.
-   * @param int $width
-   *   The width of the photo.
-   * @param int $height
-   *   The height of the photo.
+   * @param $width
+   * @param $height
    * @param \Drupal\image\ImageStyleInterface $style
-   *   The image style.
    * @return array|bool
-   *   An array containing the "url", "width" and "height". NULL otherwise.
    *
    * @todo rather than returning an array, return a value object that
    *   implements CacheableDependencyInterface
