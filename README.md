@@ -23,3 +23,4 @@ To get started with Drupal via DDEV on Gitpod, add a [`.gitpod.yml`](./.gitpod.y
 ## Special thanks
 
 This template was gifted to Gitpod by [Ofer Shaal](https://github.com/shaal) - Thank you 🙏!
+# ezcontent-gitpod
