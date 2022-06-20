@@ -1,0 +1,40 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.region-footer {
+  .edge-footer {
+    font-size: 12px;
+  }
+  .row {
+    padding: 10px 0;
+  }
+  .block-system-menu-blockprivacy-policy {
+    @include respond(tab) {
+      display: inline-block;
+      width: 33%;
+    }
+    background: $color-bg-dark-cyan;
+    width: 100%;
+
+    ul {
+      li {
+        display: inline-block;
+
+        a {
+          color: $color-white;
+        }
+      }
+
+      p {
+        @include respond(tab) {
+          display: inline-block;
+          float: right;
+          padding: 8px 0 0;
+        }
+        color: $color-white;
+        display: block;
+        padding: 20px 0 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{% if content %}
+  <div {{ attributes.addClass('full-width-content-template-wrapper') }}>
+      {% if content.middle %}
+        <div {{ region_attributes.middle.addClass('middle-region') }}>
+          {{ content.middle }}
+        </div>
+      {% endif %}
+  </div>
+{% endif %}

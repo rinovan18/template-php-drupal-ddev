@@ -1,0 +1,7 @@
+lb_direct_add.settings:
+  path: '/admin/config/lb-direct-add/settings'
+  defaults:
+    _form: '\Drupal\lb_direct_add\Form\SettingsForm'
+    _title: 'Layout Builder Direct Add Settings'
+  requirements:
+    _permission: 'access content'

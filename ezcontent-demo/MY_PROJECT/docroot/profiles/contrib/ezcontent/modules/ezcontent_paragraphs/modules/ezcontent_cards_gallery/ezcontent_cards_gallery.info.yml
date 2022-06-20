@@ -1,0 +1,12 @@
+name: Cards Gallery Feature
+type: module
+description: 'Provides cards gallery feature.'
+package: EZContent Paragraphs
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - ezcontent:ezcontent_assets
+  - ezcontent:ezcontent_paragraphs
+  - libraries:libraries
+  - colorbox:colorbox
+  - paragraphs_previewer:paragraphs_previewer
+  - slick_paragraphs:slick_paragraphs

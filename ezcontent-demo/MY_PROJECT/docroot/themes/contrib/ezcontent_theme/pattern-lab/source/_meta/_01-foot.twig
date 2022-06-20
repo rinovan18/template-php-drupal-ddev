@@ -1,0 +1,57 @@
+<!--DO NOT REMOVE-->
+{{ patternLabFoot | raw }}
+<link
+rel="stylesheet"
+type="text/css"
+href="https://www.jacklmoore.com/colorbox/example1/colorbox.css"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js?{{ cacheBuster }}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js?{{ cacheBuster }}"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<link href="http://ezcontent53esqcn36d.devcloud.acquia-sites.com/modules/contrib/slick/css/theme/slick.theme--asnavfor.css" />
+<link rel="stylesheet" type="text/css" href="https://www.jacklmoore.com/colorbox/example1/colorbox.css" />
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function (event) {
+        //do work
+        $(document).ready(function () {
+            $('.carousel').slick({
+                slidesToShow: 1,
+                dots: true,
+            });
+        });
+    })
+    function setColorBox() {
+        $(".gallery-item").colorbox({
+        rel: "gallery-item",
+        maxWidth: "100%",
+        maxHeight: "100%"
+        });
+    }
+    const script = document.createElement("script");
+    script.src = "https://www.jacklmoore.com/colorbox/jquery.colorbox.js";
+    script.async = true;
+    script.onload = () => setColorBox();
+    document.getElementsByClassName("gallery-block")[0].appendChild(script);
+</script>
+<script>
+    function setColorBox() {
+    $(".gallery-item").colorbox({
+      rel: "gallery-item",
+      maxWidth: "100%",
+      maxHeight: "100%"
+    });
+  }
+    const script = document.createElement("script");
+    script.src = "https://www.jacklmoore.com/colorbox/jquery.colorbox.js";
+    script.async = true;
+    script.onload = () => setColorBox();
+    document.getElementsByClassName("gallery-block")[0].appendChild(script);
+    </script>
+
+</body>
+
+
+</html>

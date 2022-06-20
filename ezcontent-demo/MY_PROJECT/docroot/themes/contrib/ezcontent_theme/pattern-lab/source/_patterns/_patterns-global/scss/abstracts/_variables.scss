@@ -1,0 +1,75 @@
+// COLORS
+$color-primary: #3367d6;
+$color-primary-hover: #4285f4;
+$color-secondary: #f8ab3d;
+
+$color-white-light: #f2f2f2;
+$color-grey-light-1: #f0f6eb;
+$color-grey-light-2: #ddd;
+$color-grey-light-3: #4a4a4a;
+$color-grey-light-4: #e5e5e5;
+$color-grey-light-dark: #e8e8e8;
+
+$color-white: #fff;
+$color-black: #000;
+$color-text: #000;
+$color-footer-border-lighter: rgba(107, 164, 57, 0.25);
+$color-bg-dark-cyan: #3e5063;
+$color-dark-blue: #122760;
+$color-blue-light: #2f9eb9;
+$color-border-line: #979797;
+$color-bg-grey: #f1f1f1;
+$color-primary-btn: #003cc5;
+$color-primary-btn-hover: #0036b1;
+$color-cta-button: #1a73e8;
+$color-copy-right-bg: #1b2638;
+$color-shortcut-btn: #d4d4d8;
+$color-shortcut-btn-border: #a9a9a9;
+$color-shortcut-btn-hover: #c2c3ca;
+$color-shortcut-block-btn: #219fad;
+$color-bg-table-rows: #333;
+$color-cyan-blue: #0444c4;
+$color-grayish-blue: #222330;
+$color-dark-gray: #222;
+$color-navy-blue: #0069d9;
+$color-eclipse: #3a3a3a;
+$color-nobel-gray: #9E9E9E;
+$color-green-lt: #729478;
+$color-green-lt-hover: #416448;
+$color-dark-gray-extra: #333e50;
+$color-dark-gray-extra-dk: #232d3d;
+$color-dark-gray-extra-edk: #161c26;
+$color-red: #d94255;
+$color-red-hover: #be2c3e;
+
+// FONT SIZE
+$default-font-size: 16px;
+$min-font-size: 13px;
+
+// fonts
+$primary-font: 'ProximaNova-Regular', sans-serif;
+$secondary-font: 'ProximaNova-Regular', sans-serif;
+$heading-font: 'ProximaNovaT-Thin', sans-serif;
+$bold-font: 'ProximaNova-Bold', sans-serif;
+$article-font-regular: 'open-sansregular';
+$article-font-light: 'open-sanslight';
+$article-font-semi-bold: 'open-sanssemibold';
+
+$greadient: radial-gradient(
+  circle,
+  rgba(238, 174, 202, 1) 0%,
+  rgba(148, 187, 233, 1) 100%
+);
+
+//screen width
+$screen-sm: 700px;
+$screen-md: 1200px;
+$screen-lg: 1300px;
+
+//component width
+$component-xs: 800px;
+$component-sm: 850px;
+$component-md: 960px;
+$component-lg: 980px;
+$component-xl: 1080px;
+$component-xxl: 1280px;

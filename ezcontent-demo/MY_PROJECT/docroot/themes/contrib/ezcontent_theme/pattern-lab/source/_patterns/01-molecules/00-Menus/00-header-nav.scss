@@ -1,0 +1,12 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+
+.ezcontent-header {
+  .navbar-nav {
+    .nav-link {
+      color: $color-dark-blue;
+      font-family: $bold-font;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}

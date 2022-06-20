@@ -1,0 +1,22 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+
+.btn, .button {
+  background: $color-primary;
+  border: 0;
+  color: $color-white;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding: 7px 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background: $color-primary-hover;
+    color: $color-white;
+  }
+}

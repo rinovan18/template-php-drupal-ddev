@@ -1,0 +1,22 @@
+{
+  "name": "srijanone/ezcontent_admin",
+  "description": "Ezcontent administration theme with modern minimalist design.",
+  "type": "drupal-theme",
+  "homepage": "https://github.com/srijanone/ezcontent_admin",
+  "support": {
+    "issues": "https://github.com/srijanone/ezcontent_admin"
+  },
+  "require": {
+    "drupal/gin_toolbar": "^1.0@beta",
+    "drupal/gin": "^3.0@alpha"
+  },
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  },
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

@@ -1,0 +1,26 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.embed-block {
+  @include respond(tab) {
+    margin: 0 0 40px;
+  }
+  margin: 0 0 20px;
+
+  #embedded-container {
+    iframe {
+      @include respond(tab) {
+        height: 400px;
+      }
+      @include clearfix;
+      height: 300px;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  
+  .instagram-media,
+  .twitter-tweet {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,22 @@
+name: EZContent Publish Feature
+type: module
+description: 'Provides publish features for content editor.'
+package: EZContent Publish
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - autosave_form:autosave_form
+  - colorbutton:colorbutton
+  - content_lock:content_lock_timeout
+  - diff:diff
+  - formtips:formtips
+  - lb_ux:lb_ux
+  - panelbutton:panelbutton
+  - paragraphs_ee:paragraphs_ee
+  - smart_trim:smart_trim
+  - vertical_tabs_config:vertical_tabs_config
+  - workbench_reviewer:workbench_reviewer
+
+# Information added by Drupal.org packaging script on 2022-05-26
+version: '1.2.0-alpha5'
+project: 'ezcontent_publish'
+datestamp: 1653565911

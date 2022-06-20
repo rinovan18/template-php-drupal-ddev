@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * ezcontent_admin.theme
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for page.
+ */
+function ezcontent_admin_preprocess_page(&$variables) {
+  $activeThemeName = \Drupal::theme()->getActiveTheme()->getName();
+  $variables['active_admin_theme'] = $activeThemeName;
+}
+
+/**
+ * Set Gin CSS on top of all other CSS files.
+ */
+function ezcontent_admin_css_alter(&$css, $assets) {
+  // UPDATE THIS PATH TO YOUR MODULE'S CSS PATH.
+  $path = drupal_get_path('theme', 'ezcontent_admin') . '/css/style.css';
+
+  if (isset($css[$path])) {
+    // Use anything greater than 100 to have it load after the theme
+    // as CSS_AGGREGATE_THEME is set to 100.
+    // Let's be on the safe side and assign a high number to it.
+    $css[$path]['group'] = 200;
+  }
+}

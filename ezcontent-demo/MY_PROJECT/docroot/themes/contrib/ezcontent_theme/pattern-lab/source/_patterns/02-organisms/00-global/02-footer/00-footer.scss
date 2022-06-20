@@ -1,0 +1,58 @@
+@import '../../../_patterns-global/scss/abstracts/variables';
+@import '../../../_patterns-global/scss/abstracts/mixins';
+
+.footer {
+  @include respond(tab) {
+    padding: 36px 0 0;
+  }
+  background-color: $color-bg-dark-cyan;
+  border-top: 1px solid $color-grey-light-dark;
+  color: $color-white;
+  margin: 0;
+  padding: 20px 0 0;
+  width: 100%;
+
+  .container {
+    padding: 0;
+  }
+
+.footer-copyright{
+  position: relative;
+  background-color: $color-copy-right-bg;
+  padding: 20px 30px;
+    .copyright {
+      margin: 0 auto;
+      max-width: 1366px;
+      width: 100%;
+      p.copyright-info {
+        margin-bottom: 0;
+        text-align: center;
+        position: inherit;
+      }
+    }
+    .copyright-info {
+      margin-bottom: 0;
+      text-align: center;
+      position: inherit;
+    }
+  }
+}
+
+
+//patternlab
+.footer-top-menu  {
+    display: inline-block;
+    padding-left: 30px;
+    width: 33%;
+    ul {
+     li {
+        list-style: none;
+      }
+    }
+}
+
+.footer-top-menu-list {
+    display: inline-block;
+    padding-left: 30px;
+    width: 33%;
+}

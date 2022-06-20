@@ -1,0 +1,44 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.quote-component {
+  @include respond(tab) {
+    padding: 24px 60px 50px;
+  }
+  border-bottom: 1px solid $color-border-line;
+  border-top: 1px solid $color-border-line;
+  margin-bottom: 40px;
+  padding: 24px 40px 30px;
+  position: relative;
+
+  .field--name-field-quote {
+    color: $color-grey-light-3;
+    display: block;
+    font-family: $heading-font;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 51px;
+    padding-top: 40px;
+    position: relative;
+
+    &::before {
+      color: $color-primary;
+      content: open-quote;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 64px;
+      font-weight: bold;
+      left: 30%;
+      line-height: 34px;
+      position: absolute;
+      top: 12px;
+    }
+  }
+
+  .field--name-field-source {
+    .field__label,
+    .field__item {
+      display: inline;
+      font-size: 18px;
+    }
+  }
+}

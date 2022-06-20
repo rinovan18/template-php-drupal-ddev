@@ -1,0 +1,60 @@
+{
+  "heroCarousel": {
+    "heroAssets": [
+      {
+        "id": 1,
+        "image": "../../../images/hero-banner.jpg",
+        "title": "Title 1",
+        "detail_class": "hero_banner-body hero_media_content w-100 position-absolute text-center",
+        "description": "Maecenas faucibus mollis interdum.",
+        "field_subhead": "Subhead 1",
+        "bgColor": "rgba(0, 249, 0, 0.37)",
+        "textPosition": "right",
+        "field_short_title": "Short Title 1",
+        "url": [
+          {
+            "link": "",
+            "title": "Link Text 1",
+            "video_url": 0
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "image": "../../../images/hero-banner.jpg",
+        "title": "Title 2",
+        "description": "Maecenas faucibus mollis interdum.",
+        "field_subhead": "Subhead 2",
+        "detail_class": "hero_banner-body hero_media_content w-100 position-absolute text-left",
+        "bgColor": "rgba(0, 249, 0, 0.37)",
+        "textPosition": "right",
+        "field_short_title": "Short Title 2",
+        "url": [
+          {
+            "link": "",
+            "title": "Link Text 2",
+            "video_url": 0
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "image": "../../../images/hero-banner.jpg",
+        "title": "Title 4",
+        "description": "Maecenas faucibus mollis interdum.",
+        "field_subhead": "Subhead 4",
+        "detail_class": "hero_banner-body hero_media_content w-100 position-absolute",
+        "bgColor": "rgba(0, 249, 0, 0.37)",
+        "textPosition": "right",
+        "field_short_title": "Short Title 4",
+        "url": [
+          {
+            "link": "",
+            "title": "Link Text 4",
+            "video_url": 0
+          }
+        ]
+      }
+    ]
+  }
+}

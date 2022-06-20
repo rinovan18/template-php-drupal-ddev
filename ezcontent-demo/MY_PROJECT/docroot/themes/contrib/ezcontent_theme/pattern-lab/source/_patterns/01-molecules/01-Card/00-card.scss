@@ -1,0 +1,160 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.layout--twocol-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  > .layout--region {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .layout--twocol-section.layout--twocol-section--50-50
+  > .layout--region--first,
+  .layout--twocol-section.layout--twocol-section--50-50
+  > .layout--region--second {
+    flex: 0 1 50%;
+  }
+
+  .layout--twocol-section.layout--twocol-section--33-67
+  > .layout--region--first,
+  .layout--twocol-section.layout--twocol-section--67-33
+  > .layout--region--second {
+    flex: 0 1 33%;
+  }
+
+  .layout--twocol-section.layout--twocol-section--33-67
+  > .layout--region--second,
+  .layout--twocol-section.layout--twocol-section--67-33
+  > .layout--region--first {
+    flex: 0 1 67%;
+  }
+
+  .layout--twocol-section.layout--twocol-section--25-75
+  > .layout--region--first,
+  .layout--twocol-section.layout--twocol-section--75-25
+  > .layout--region--second {
+    flex: 0 1 25%;
+  }
+
+  .layout--twocol-section.layout--twocol-section--25-75
+  > .layout--region--second,
+  .layout--twocol-section.layout--twocol-section--75-25
+  > .layout--region--first {
+    flex: 0 1 75%;
+  }
+}
+
+.card-media {
+  @include clearfix;
+  padding: 0;
+
+  .layout {
+    .layout--region {
+      @include respond(tab) {
+        margin-bottom: 0;
+      }
+      margin-bottom: 20px;
+      padding: 0;
+
+      .field--name-field-media-image {
+        @include respond(tab) {
+          height: 500px;
+        }
+        width: 100%;
+
+        img {
+          display: block;
+          height: 100%;
+          margin: 0 auto;
+          object-fit: cover;
+        }
+      }
+
+      .card-text-content {
+        @include respond(tab) {
+          padding: 60px 40px 0;
+        }
+
+        @include respond(desktop) {
+          padding: 100px 80px 0;
+        }
+        color: $color-dark-blue;
+
+        .field {
+          &--name-field-title {
+            @include respond(tab) {
+              font-size: 32px;
+              line-height: 36px;
+            }
+
+            @include respond(desktop) {
+              font-size: 36px;
+              line-height: 40px;
+            }
+            font-family: $bold-font;
+            font-size: 28px;
+            line-height: 32px;
+          }
+
+          &--name-field-short-title {
+            font-size: 16px;
+            margin-top: 8px;
+          }
+
+          &--name-field-subhead {
+            font-size: 14px;
+            margin-top: 8px;
+          }
+
+          &--name-field-summary {
+            @include respond(tab) {
+              margin-bottom: 40px;
+            }
+            display: block;
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+
+            p {
+              margin: 0;
+            }
+          }
+
+          &--name-field-media-image {
+            align-items: center;
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+          }
+
+          &--name-field-link {
+            text-align: left;
+
+            a {
+              color: $color-black;
+              font-family: $bold-font;
+              font-size: 18px;
+              line-height: 22px;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+
+      .block-field-blockparagraphcardfield-media {
+        height: 100%;
+
+        div,
+        section {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

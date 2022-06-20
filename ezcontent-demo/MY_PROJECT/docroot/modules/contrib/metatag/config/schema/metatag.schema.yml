@@ -1,0 +1,30 @@
+# Schema for metatag.
+field.value.metatag:
+  type: mapping
+  label: 'Default value'
+  mapping:
+    value:
+      type: string
+      label: 'Metatags'
+
+field.widget.settings.metatag_firehose:
+  type: mapping
+  label: 'Advanced meta tags form'
+  mapping:
+    sidebar:
+      type: boolean
+      label: 'Place field in sidebar'
+    use_details:
+      type: boolean
+      label: 'Place field in collapsed details container'
+
+field.widget.settings.metatag_async:
+  type: field.widget.settings.metatag_firehose
+  label: 'Asynchronous meta tags form display format settings'
+  mapping:
+    async_groups:
+      type: sequence
+      label: 'Meta tag groups to load asynchronously'
+      sequence:
+        type: string
+        label: 'Value'

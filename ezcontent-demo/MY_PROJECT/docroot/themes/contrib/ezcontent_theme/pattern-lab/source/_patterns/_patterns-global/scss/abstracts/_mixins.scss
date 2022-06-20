@@ -1,0 +1,149 @@
+@import 'variables';
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin itemcenter {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin tablestyle {
+  border-top: 1px solid $color-grey-light-2;
+  line-height: 1.42857143;
+  padding: 8px;
+  vertical-align: top;
+}
+
+@mixin backgroundopacity {
+  background-color: rgba(0, 0, 0, 0.37);
+  border-width: 0;
+  color: $color-white;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin: 0;
+  opacity: 1;
+}
+
+@mixin btnstyle {
+  background: $color-primary;
+  border: 0;
+  color: $color-white;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.42857143;
+  margin-bottom: 0;
+  padding: 7px 15px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover {
+    background: $color-primary-hover;
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &:focus {
+    background: $color-primary-hover;
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab {
+    @media only screen and (min-width: $screen-sm) {
+      @content;
+    } //tab
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: $screen-md) {
+      @content;
+    } //desktop
+  }
+
+  @if $breakpoint == large-desktop {
+    @media only screen and (min-width: $screen-lg) {
+      @content;
+    } //desktop
+  }
+}
+
+// placeholder
+%h1 {
+  @include respond(phone-min) {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  font-family: $bold-font;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+%h2 {
+  @include respond(phone-min) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  font-family: $bold-font;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin title {
+  @include respond(phone-min) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  font-family: $bold-font;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+%h3 {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+//  CSS Transition
+// Usage: @include transition(width,0.3s,ease-out);
+
+@mixin transition($transition-property, $transition-time, $method) {
+  transition: $transition-property $transition-time $method;
+}
+
+//  Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
+// Usage: @include font-size(1, large);
+
+@mixin font-size($decimal-size, $keyword: null) {
+  @if $keyword {
+    font-size: $keyword;
+  } @else {
+    font-size: $decimal-size * $base-font-multiplier * 16px;
+  }
+  font-size: $decimal-size * 1rem;
+}
+
+// text ellipsis
+@mixin text-ellipsis($clamp) {
+  -webkit-line-clamp: $clamp;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+//shadow box
+@mixin shadow-box {
+ box-shadow: -8px -8px 40px rgba(245, 245, 245, 0.8), 20px 20px 40px rgba(226, 229, 236, 0.98), -6px -6px 16px rgba(0, 0, 0, 0.2);
+}

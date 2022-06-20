@@ -1,0 +1,50 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.gallery-component {
+  @include clearfix;
+  margin-bottom: 50px;
+  padding: 0;
+  position: relative;
+
+  .field {
+    &--name-field-title {
+      @include title;
+      font-family: $heading-font;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    &--name-field-body {
+      display: block;
+      font-size: 16px;
+    }
+
+    &--name-field-media-items {
+      align-items: center;
+      background-color: $color-bg-grey;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+
+      > .field__item {
+        display: inline-block;
+        padding: 10px;
+      }
+    }
+
+    &--name-field-media-image {
+      align-items: center;
+      display: flex;
+      margin: 0 auto;
+      overflow: hidden;
+
+      img {
+        height: auto;
+        transform: scale(1.15);
+        transition: opacity .35s, transform .35s;
+      }
+    }
+  }
+}

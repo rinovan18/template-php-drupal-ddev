@@ -1,0 +1,23 @@
+framework:
+  css:
+    theme:
+      css/_patterns-global/style.css: {}
+      css/00-atoms/05-forms/00-form.css: {}
+      css/01-molecules/05-HeroComponent/00-hero-component.css: {}
+      css/01-molecules/05-HeroComponent/00-hero-carousel.css: {}
+      css/01-molecules/03-MapComponent/00-map-component.css: {}
+      css/01-molecules/11-Embed/00-embed.css: {}
+      css/01-molecules/04-SocialMedia/00-social-media.css: {}
+      css/02-organisms/00-global/00-global.css: {}
+      css/04-pages/00-home-page.css: {}
+      css/04-pages/01-article-page.css: {}
+  js:
+    js/custom.js: {}    
+
+bootstrap_cdn:
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
+    //stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js: {}
+  css:
+    component:
+      //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}

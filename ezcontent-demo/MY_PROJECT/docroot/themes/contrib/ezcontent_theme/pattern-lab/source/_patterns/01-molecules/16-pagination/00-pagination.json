@@ -1,0 +1,52 @@
+{
+  "pager": {
+    "pager__items":{
+      "pager__item": [
+        {
+          "url": "#",
+          "text": "first",
+          "class": "pager__item--first"
+        },
+        {
+          "url": "#",
+          "text": "previous",
+          "class": " pager__item--previous"
+        },
+        {
+          "url": "#",
+          "text": "1",
+          "class": ""
+        },
+        {
+          "url": "#",
+          "text": "2",
+          "class": ""
+        },
+        {
+          "url": "#",
+          "text": "3",
+          "class": "is-active"
+        },
+        {
+          "url": "#",
+          "text": "4",
+          "class": ""
+        },
+        {
+          "url": "#",
+          "text": "5",
+          "class": ""
+        },	
+        {
+          "url": "#",
+          "text": "next",
+          "class": " pager__item--next"
+        },
+        { 
+          "url": "#",
+          "text": "last",
+          "class": " pager__item--last"
+        }]
+      }
+   }
+}

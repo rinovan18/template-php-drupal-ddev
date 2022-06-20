@@ -1,0 +1,14 @@
+{
+  "paragraphAssets": {
+    "assets": [
+      {
+        "d_id": 1,
+        "videolinks": "https://www.youtube.com/embed/YE7VzlLtp-4"
+      },
+      {
+        "d_id": 2,
+        "imagePath": "../../../images/drupal_8.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "footermenutop": {
+    "footerTop": [
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "About Us",
+        "class": "nav-link"
+      },
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Career",
+        "class": "nav-link"
+      }
+    ]
+  },
+  "socialmedia": {
+    "medialinks": [
+      {
+        "id": "github",
+        "url": "#",
+        "markup": "<span class=\"fa fa-github fa-2x\"></span>"
+      },
+      {
+        "id": "twitter",
+        "url": "#",
+        "markup": "<span class=\"fa fa-twitter fa-2x\"></span>"
+      }
+    ]
+  }
+}

@@ -1,0 +1,493 @@
+@import '../_patterns-global/scss/abstracts/variables';
+@import '../_patterns-global/scss/abstracts/mixins';
+
+.node--type-article {
+  font-family: $article-font-regular;
+
+  .block-page-title-block {
+    @include respond(desktop) {
+      padding-left: 40px;
+    }
+    margin: 0 auto;
+    max-width: $component-xxl;
+
+    h1 {
+      color: $color-dark-blue;
+      font-family: $article-font-light;
+      font-size: 48px;
+      line-height: 65px;
+      padding-top: 3px;
+    }
+  }
+
+  .block-social-sharing-block {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    max-width: $component-xxl;
+
+    .social-media-sharing {
+      @include respond(desktop) {
+        margin-left: 40px;
+      }
+      border-bottom: solid 1px $color-border-line;
+      padding: 0 0 20px;
+
+      li {
+        margin-right: 7px;
+
+        .share {
+          img {
+            width: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  .field--name-field-content {
+    & > .field__item {
+      margin-bottom: 36px;
+    }
+  }
+
+  .paragraph--type--text,
+  .paragraph--type--quote,
+  .paragraph--type--faq,
+  .paragraph--type--map,
+  .paragraph--type--card-list,
+  .paragraph--type--card,
+  .paragraph--type--assets,
+  .paragraph--type--social-media,
+  .paragraph--type--embed,
+  .paragraph--type--referenced-card,
+  .field--name-field-author {
+    @include respond(desktop) {
+      max-width: $component-sm;
+    }
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .paragraph--type--faq {
+    .faq-wrapper {
+      .card-header {
+        h4 {
+          font-family: $article-font-semi-bold;
+        }
+      }
+    }
+  }
+
+  .paragraph--type--quote {
+    .quote-component {
+      .field--name-field-quote {
+        font-family: $article-font-regular;
+      }
+    }
+  }  
+
+  .paragraph--type--card-list {
+    @include respond(desktop) {
+      max-width: $component-md;
+    }
+
+    @include respond(large-desktop) {
+      max-width: $component-xl;
+    }
+
+    & > .field--name-field-title {
+      @include respond(tab) {
+        font-size: 22px;
+        line-height: 26px;
+      }
+      @include respond(desktop) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      font-family: $article-font-semi-bold;
+      font-size: 22px;
+      line-height: 26px;
+      padding-bottom: 20px;
+    }
+
+    .card-media {
+      .layout {
+        .layout--region {
+          .card-text-content {
+            max-height: 500px;
+            padding: 60px 40px 0;
+
+            .field--name-field-summary {
+              max-height: 240px;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+
+    .paragraph--type--card {
+      .card-text-content {
+        max-height: 600px;
+        overflow: hidden;
+      }
+    }
+
+    .paragraph {
+      margin-bottom: 0;
+    }
+
+    .col-12,
+    .col-sm-12 {
+      padding: 0;
+      &.cards-grid {
+        .card-media {
+          &:hover {
+            .field--name-field-title, .field--name-field-subhead, .field--name-field-short-title{
+              @include text-ellipsis(2);
+            }
+            .field--name-field-summary {
+              p {
+                @include text-ellipsis(3);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .row {
+      margin: 0;
+    }
+
+    &.paragraph--view-mode--cards-grid {
+      .col-12,
+      .col-sm-12 {
+        padding: 1px;
+      }
+    }
+  }
+
+  .paragraph--type--gallery {
+    @include respond(desktop) {
+      max-width: $component-md;
+    }
+
+    @include respond(large-desktop) {
+      max-width: $component-xl;
+    }
+    margin: 0 auto;
+    max-width: 100%;
+
+    .gallery-component {
+      @include respond(desktop) {
+        right: -60px;
+      }
+
+      @include respond(large-desktop) {
+        right: -115px;
+      }
+
+      .gc--field--name-field-title {
+        @include respond(tab) {
+          font-size: 22px;
+          line-height: 26px;
+        }
+
+        @include respond(desktop) {
+          font-size: 24px;
+          line-height: 32px;
+        }
+        font-family: $article-font-semi-bold;
+        font-size: 22px;
+        line-height: 26px;
+        padding-bottom: 20px;
+      }
+
+      .field.field--name-field-media-items {
+        @include respond(tab) {
+          padding: 20px 15px;
+        }
+
+        @include respond(desktop) {
+          padding: 30px 45px;
+        }
+
+        > .field__item {
+          @include respond(desktop) {
+            padding: 15px;
+          }
+
+          .field--name-field-media-image {
+            img {
+              @include respond(tab) {
+                width: 215px;
+              }
+
+              @include respond(desktop) {
+                width: 260px;
+              }
+
+              @include respond(large-desktop) {
+                width: 300px;
+              }
+              height: 250px;
+              object-fit: cover;
+              width: 300px;
+            }
+          }
+        }
+      }
+
+      .field--name-field-body {
+        @include respond(desktop) {
+          max-width: $component-sm;
+        }
+        max-width: 100%;
+        padding-top: 20px;
+      }
+
+      a.link {
+        color: $color-black;
+        display: block;
+        font-family: $article-font-semi-bold;
+        font-size: 18px;
+        line-height: 22px;
+        padding-top: 20px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.paragraph--view-mode--gallery-carousel {
+      @include respond(desktop) {
+        max-width: $component-sm;
+      }
+
+      .gallery-carousel {
+        .gc--field--name-field-title {
+          @include respond(tab) {
+            font-size: 22px;
+            line-height: 26px;
+          }
+
+          @include respond(desktop) {
+            font-size: 24px;
+            line-height: 32px;
+          }
+          font-family: $article-font-semi-bold;
+          font-size: 22px;
+          line-height: 26px;
+        }
+
+        .slick-wrapper {
+          .slick {
+            .slick-slider {
+              .slick-list {
+                padding: 0;
+
+                &.draggable {
+                  padding-top: 20px;
+                }
+
+                .slick-track {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+
+        .field--name-field-body {
+          padding-top: 20px;
+        }
+
+        a.link {
+          color: $color-black;
+          display: block;
+          font-family: $article-font-semi-bold;
+          font-size: 18px;
+          line-height: 22px;
+          padding-top: 20px;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .paragraph--type--hero-media {
+    .hero-media-component {
+      .hero-banner-body {
+        padding: 20px 40px;
+      }
+    }
+  }
+
+  .paragraph {
+    @include respond(desktop) {
+      margin-bottom: 50px;
+    }
+    margin-bottom: 30px;
+  }
+
+  .field--name-field-author {
+    background-color: $color-white-light;
+    padding: 25px;
+    margin-bottom: 20px;
+    @include shadow-box;
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+  }
+}
+
+
+//pattern-lab
+.article {
+  h1 {
+    color: $color-dark-blue;
+    font-family: $article-font-light;
+    font-size: 48px;
+    line-height: 65px;
+    padding-top: 3px;
+    margin-bottom: 30px;
+  }
+  ol, ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .text-content,
+  .gallery-carousel,
+  .faq-wrapper,
+  .referenced-card,
+  .quote-component,
+  .map-component, 
+  iframe {
+    @include respond(desktop) {
+      max-width: $component-sm;
+    }
+    margin: 20px auto;
+    max-width: 100%;
+    display: block;
+  }
+  .text-content {
+    img {
+      margin: 10px 0;
+    }
+  }
+
+  .referenced-card { 
+    .field--name-field-article{
+        .field--type-image {
+          height: auto;
+        }
+    }
+  }
+
+  .gallery-component {
+    @include respond(desktop) {
+      right: -18px;
+    }
+
+    @include respond(large-desktop) {
+      right: -115px;
+    }
+
+    @include respond(large-desktop) {
+      max-width: $component-xl;
+    }
+
+    @include respond(large-desktop) {
+      max-width: $component-xl;
+    }
+    margin: 20px auto;
+    max-width: 100%;
+
+
+    .gc--field--name-field-title {
+      @include respond(tab) {
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      @include respond(desktop) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      font-family: $article-font-semi-bold;
+      font-size: 22px;
+      line-height: 26px;
+      padding-bottom: 20px;
+    }
+
+    .field--name-field-media-items{
+      @include respond(tab) {
+        padding: 20px 15px;
+      }
+
+      @include respond(desktop) {
+        padding: 30px 20px;
+      }
+
+      > .field--item {
+        @include respond(desktop) {
+          padding: 15px;
+          height: 250px;
+          object-fit: cover;
+          width: 300px;
+          min-width: 300px;
+        }
+
+        .field--name-field-media-image{
+          img {
+            @include respond(tab) {
+              width: 215px;
+            }
+
+            @include respond(desktop) {
+              width: 260px;
+            }
+
+            @include respond(large-desktop) {
+              // width: 300px;
+            }
+            height: 250px;
+            object-fit: cover;
+            // width: 300px;
+          }
+        }
+      }
+    }
+
+    .field--name-field-body {
+      @include respond(desktop) {
+        max-width: $component-sm;
+      }
+      max-width: 100%;
+      padding-top: 20px;
+    }
+
+    a.link {
+      color: $color-black;
+      display: block;
+      font-family: $article-font-semi-bold;
+      font-size: 18px;
+      line-height: 22px;
+      padding-top: 20px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+}

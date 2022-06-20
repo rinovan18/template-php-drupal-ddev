@@ -1,0 +1,12 @@
+{
+  "map": {
+    "title": "Taj Mahal: The symbol of love",
+    "subTitle": " India Taj Mahal is an exceptional beauty",
+    "location": " Taj Mahal",
+    "url": "https://maps.google.com/maps?hl=en&q=Agra&t=m&z=14&output=embed",
+    "body": "We are a digital transformation company helping enterprises build and modernize their digital systems",
+    "links": { "url": "http://www.google.com", "title": "Click Me" },
+    "aria": "Read more about location",
+    "titleClass": "field--name-field-title"
+  }
+}

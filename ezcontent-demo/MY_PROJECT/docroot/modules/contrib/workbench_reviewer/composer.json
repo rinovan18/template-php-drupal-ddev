@@ -1,0 +1,27 @@
+{
+    "name": "drupal/workbench_reviewer",
+    "description": "Allows content editors to assign content to another user for review",
+    "license": "GPL-2.0+",
+    "type": "drupal-module",
+    "homepage": "https://github.com/patrickfweston/workbench_reviewer",
+    "authors": [
+        {
+            "name": "Patrick Weston",
+            "email": "weston@palantir.net"
+        }
+    ],
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "require": {
+        "drupal/core": "^8.7||^9.0"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import '../_patterns-global/scss/abstracts/variables';
+@import '../_patterns-global/scss/abstracts/mixins';
+
+.path-frontpage {
+  .ezcontent-header {
+    .container {
+      @include respond(desktop) {
+        padding: 0 60px;
+      }
+      padding: 0 20px;
+    }
+  }
+
+  .container {
+    .main-content {
+      padding: 0;
+
+      .block--type-cards {
+        .field--name-field-card {
+          > .field--item {
+            padding: 0;
+            &.col-md-4.cards-grid{
+              padding: 1px;
+             }
+          }
+        }
+      }
+
+      .block--type-referenced-cards {
+        @include respond(tab) {
+          padding: 0 30px;
+        }
+        padding: 0 10px;
+      }
+
+      .block--type-embed-block {
+        background: $color-bg-grey;
+        padding: 36px 0;
+      }
+    }
+  }
+
+  footer {
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+.layout--twocol-section {
+  .layout__region--first {
+    padding-right: 10px;
+  }
+
+  .layout__region--second {
+    padding-left: 10px;
+  }
+}
+
+//patternlab
+.page--content{
+  .content-listing-component {
+    margin: 20px auto;
+  }
+}

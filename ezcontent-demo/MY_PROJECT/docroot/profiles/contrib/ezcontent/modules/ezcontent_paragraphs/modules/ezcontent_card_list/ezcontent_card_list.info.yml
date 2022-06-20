@@ -1,0 +1,8 @@
+name: Card List Feature
+type: module
+description: "Provides card_list feature for promoting content."
+package: EZContent Paragraphs
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - ezcontent:ezcontent_card
+  - ezcontent:ezcontent_paragraphs

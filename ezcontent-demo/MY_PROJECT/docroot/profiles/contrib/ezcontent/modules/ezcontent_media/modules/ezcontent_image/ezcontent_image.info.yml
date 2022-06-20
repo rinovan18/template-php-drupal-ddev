@@ -1,0 +1,9 @@
+name: Image Feature
+type: module
+description: 'Provides Image Media type for image based features.'
+package: EZContent Media
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - ezcontent:ezcontent_media
+  - ezcontent:ezcontent_user
+  - image_widget_crop:image_widget_crop

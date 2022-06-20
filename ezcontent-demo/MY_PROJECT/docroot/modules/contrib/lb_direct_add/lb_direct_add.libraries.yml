@@ -1,0 +1,5 @@
+add_label:
+  js:
+    js/add_label.js: {}
+  dependencies:
+    - core/jquery.once

@@ -1,0 +1,21 @@
+{
+  "footermenu": {
+    "footerBottom": [
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Privacy Policy",
+        "class": "nav-link"
+      },
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Terms of Service",
+        "class": "nav-link"
+      }
+    ],
+    "copy_right": {
+      "date": "2020",
+      "sitename": "Ezcontent",
+      "text": "Ltd. All rights reserved."
+    }
+  }
+}

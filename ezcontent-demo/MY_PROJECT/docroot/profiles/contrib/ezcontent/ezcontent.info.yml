@@ -1,0 +1,78 @@
+name: EzContent
+type: profile
+description: 'A Feature rich starter profile from Srijan.'
+core_version_requirement: ^8.8 || ^9
+
+# Modules to install to support the profile.
+install:
+  - admin_toolbar_tools
+  - autosave_form
+  - block_content
+  - breakpoint
+  - ckeditor
+  - color
+  - comment
+  - components
+  - config
+  - config_rewrite
+  - contact
+  - content_lock_timeout
+  - contextual
+  - crop
+  - dblog
+  - editor
+  - email_registration
+  - entity_embed
+  - ezcontent_article
+  - ezcontent_basic_page
+  - ezcontent_media
+  - ezcontent_user
+  - field_ui
+  - file
+  - formtips
+  - fvm
+  - gin_login
+  - gin_toolbar
+  - google_analytics
+  - help
+  - history
+  - image
+  - image_widget_crop
+  - linkit
+  - moderation_dashboard
+  - moderation_sidebar
+  - options
+  - path
+  - pathauto
+  - quickedit
+  - rdf
+  - redirect
+  - robotstxt
+  - scheduler_content_moderation_integration
+  - schema_metatag
+  - search
+  - shortcut
+  - simple_sitemap
+  - smart_trim
+  - social_media_links
+  - taxonomy
+  - toolbar
+  - update_helper_checklist
+  - views
+  - views_ui
+  - vertical_tabs_config
+  - workflows
+
+# Required modules
+# Note that any dependencies of the modules listed here will be installed automatically.
+dependencies:
+  - drupal:block
+  - drupal:node
+  - drupal:views
+
+# List any themes that should be installed as part of the profile installation.
+# Note that this will not set any theme as the default theme.
+themes:
+  - gin
+  - ezcontent_admin
+  - ezcontent_theme

@@ -1,0 +1,51 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.region-footer {
+  .block--type-text-block {
+    @include respond(tab) {
+      border: 0;
+      margin-bottom: 0;
+      padding-left: 30px;
+      width: 33%;
+    }
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .block-system-menu-blockfooter-menu {
+    @include respond(tab) {
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+    }
+    display: block;
+    width: 100%;
+  }
+
+  .menu--footer-menu {
+    @include respond(tab) {
+      padding-bottom: 0;
+    }
+    padding-bottom: 20px;
+    li {
+      @include respond(tab) {
+        padding: 0 10px;
+        width: 25%;
+      }
+      display: inline-block;
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      a {
+        color: $color-white;
+        padding: 0;
+        &:hover,
+        &:focus {
+          background: transparent;
+        }
+      }
+    }
+  }
+}

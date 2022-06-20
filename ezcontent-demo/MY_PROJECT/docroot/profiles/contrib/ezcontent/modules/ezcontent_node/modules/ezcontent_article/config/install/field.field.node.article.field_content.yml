@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.article
+  module:
+    - entity_reference_revisions
+id: node.article.field_content
+field_name: field_content
+entity_type: node
+bundle: article
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      text:
+        weight: -32
+        enabled: false
+      assets:
+        weight: -31
+        enabled: false
+      gallery:
+        weight: -30
+        enabled: false
+      gallery_carousel:
+        weight: -39
+        enabled: false
+      embed:
+        weight: -38
+        enabled: false
+      social_media:
+        weight: -37
+        enabled: false
+      quote:
+        weight: -26
+        enabled: false
+      map:
+        weight: -25
+        enabled: false
+      faq:
+        weight: -24
+        enabled: false
+      card_list:
+        weight: -23
+        enabled: false
+      hero_media:
+        weight: -22
+        enabled: false
+      from_library:
+        weight: -21
+        enabled: false
+      view:
+        weight: -20
+        enabled: false
+field_type: entity_reference_revisions

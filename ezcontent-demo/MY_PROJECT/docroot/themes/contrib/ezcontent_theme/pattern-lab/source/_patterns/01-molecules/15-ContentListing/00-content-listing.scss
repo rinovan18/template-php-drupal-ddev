@@ -1,0 +1,171 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.block--type-content-listing-component, .block-inline-blockcontent-listing-component {
+  .content-listing-component {
+    display: block;
+    .view-content {
+      .views-row {
+        @include respond(tab) {
+          display: flex;
+        }
+        display: block;
+        padding-bottom: 30px;
+
+        .views-field-field-thumbnail {
+          @include respond(tab) {
+            padding-bottom: 0;
+            padding-right: 30px;
+          }
+          padding-bottom: 20px;
+          padding-right: 0;
+
+          .field--name-field-media-image {
+            height: 320px;
+            width: 400px;
+
+            img {
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+          }
+        }
+
+        .views-field-title {
+          .right-content {
+            .author-tags {
+              padding-bottom: 15px;
+
+              a {
+                color: $color-dark-blue;
+
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+
+            .title {
+              @include respond(tab) {
+                font-size: 24px;
+                line-height: 28px;
+              }
+
+              @include respond(desktop) {
+                font-size: 28px;
+                line-height: 32px;
+              }
+              font-family: $bold-font;
+              font-size: 24px;
+              line-height: 28px;
+
+              a {
+                color: $color-dark-blue;
+
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+
+            .summary {
+              font-size: 16px;
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+    }
+    //pager
+    .pager{
+      margin: 10px auto;
+      .pager__items{
+        justify-content: center;
+        display: flex;
+          .pager__item{
+            list-style: none;
+            background-color: $color-white;
+            font-size: $default-font-size;
+            font-family: $article-font-regular;
+            border: 1px solid $color-shortcut-btn-border;
+            display: inline-flex;
+            border-radius:  3px;
+            margin-right: 2px;
+            &:hover{
+              border: 1px solid $color-dark-blue;
+            }
+            a{
+              color: $color-shortcut-btn-border;
+              padding: 5px 12px;
+            &:hover{
+            background-color: $color-dark-blue;
+            color: $color-white;
+            text-decoration: none;
+            }
+          }
+          &.is-active{
+            background-color: $color-dark-blue;
+            border: 1px solid $color-dark-blue;
+            a{
+            color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.node--type-author {
+  .layout--twocol-section {
+    .layout__region--first {
+      padding-right: 15px;
+    }
+
+    .layout__region--second {
+      padding-left: 15px;
+    }
+  }
+}
+
+//patterlab
+.content-listing-component { 
+  display: flex;
+  justify-content: space-between;
+  .field--name-field-image {
+    height: 320px;
+    width: 400px;
+    min-width: 400px;
+    padding-right: 30px;
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .field--text-wrapper {
+    .author-details {
+      padding-bottom: 15px;
+      .author{
+        color: $color-dark-blue;
+        display: inline-flex;
+      }
+      .tag{
+        color: $color-dark-blue;
+        display: inline-flex;
+      }
+    }
+    .field--name-field-title {
+      font-size: 28px;
+      line-height: 32px;
+      color: $color-dark-blue;
+    }
+    .field--name-field-summary {
+      .field--name-field-body {
+        font-size: 16px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

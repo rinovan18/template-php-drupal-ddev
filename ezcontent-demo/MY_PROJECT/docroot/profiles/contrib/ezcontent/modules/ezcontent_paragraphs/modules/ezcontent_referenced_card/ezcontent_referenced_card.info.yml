@@ -1,0 +1,8 @@
+name: Referenced Card Feature
+type: module
+description: 'Provides referenced card feature for promoting content.'
+package: EZContent Paragraphs
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - ezcontent:ezcontent_card
+  - ezcontent:ezcontent_article

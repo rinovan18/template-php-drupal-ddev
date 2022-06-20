@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Module file for ezcontent_demo.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function ezcontent_embed_preprocess_paragraph__embed(&$variables) {
+  $variables['#attached']['library'][] = 'ezcontent_embed/ezcontent_embed_css';
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function ezcontent_embed_preprocess_block(&$vars) {
+  if (!empty($vars['elements']['content']['#block_content'])) {
+    $bundle = $vars['elements']['content']['#block_content']->bundle();
+    if ($bundle === 'embed_block') {
+      $vars['#attached']['library'][] = 'ezcontent_embed/ezcontent_embed_css';
+    }
+  }
+}

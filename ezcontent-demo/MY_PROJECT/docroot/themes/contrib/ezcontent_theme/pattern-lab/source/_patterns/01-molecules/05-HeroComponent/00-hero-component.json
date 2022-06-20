@@ -1,0 +1,21 @@
+{
+  "heroComponent": {
+    "heroAsset": [ {
+      "id": 2,
+      "image": "../../../images/hero-banner.jpg",
+			"title": "Title 3",
+      "description": "Maecenas faucibus mollis interdum.",
+      "field_subhead": "Subhead 3",
+      "bgColor": "rgba(0, 249, 0, 0.37)",
+      "textPosition": "right",
+      "field_short_title": "Short Title 3",
+      "url": [
+        {
+          "link": "",
+          "title": "Learn More",
+          "video_url": 0
+        }
+      ]
+    }]
+  }
+}

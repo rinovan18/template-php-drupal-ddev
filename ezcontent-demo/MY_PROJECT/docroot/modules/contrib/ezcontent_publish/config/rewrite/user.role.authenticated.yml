@@ -1,0 +1,5 @@
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'use text format basic_html'
+  - 'view search api pages'

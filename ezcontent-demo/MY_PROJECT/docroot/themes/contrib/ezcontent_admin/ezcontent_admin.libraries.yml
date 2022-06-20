@@ -1,0 +1,5 @@
+framework:
+  css:
+    theme:
+      css/style.css: { weight: 300 }
+

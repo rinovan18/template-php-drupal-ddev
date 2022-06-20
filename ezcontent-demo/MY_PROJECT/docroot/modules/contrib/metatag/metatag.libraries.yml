@@ -1,0 +1,10 @@
+# @file
+# Custom CSS and JS libraries used by the Metatag module.
+
+# Custom JS required by the async field widget.
+metatag.field.widget.metatag_async:
+  version: VERSION
+  js:
+    js/metatag.field.widget.metatag_async.js: {}
+  dependencies:
+      - core/jquery

@@ -1,0 +1,18 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.alert-banner-content {
+  @include respond(tab) {
+    margin-bottom: 30px;
+    padding: 30px;
+  }
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 4px;
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

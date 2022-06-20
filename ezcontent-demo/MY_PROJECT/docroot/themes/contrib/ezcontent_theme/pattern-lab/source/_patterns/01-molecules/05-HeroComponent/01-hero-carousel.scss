@@ -1,0 +1,9 @@
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.hero-banner-wrapper {
+  @include respond(tab) {
+    height: 580px;
+  }
+  height: auto;
+  position: relative;
+}

@@ -1,0 +1,20 @@
+{
+  "galleryCarousel": {
+    "items": [
+      {
+        "url": "../../../images/srijanhero.jpg"
+      },
+      {
+        "url": "../../../images/srijanhero.jpg"
+      },
+      {
+        "url": "../../../images/srijanhero.jpg"
+      }
+    ],
+    "field_link": {
+      "url": "http://www.google.com",
+      "title": "Gallery Carousel Component"
+    },
+    "field_title": "Gallery Carousel Component"
+  }
+}

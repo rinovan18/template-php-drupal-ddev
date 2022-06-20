@@ -1,0 +1,543 @@
+{
+  "title": "Pattern Lab",
+  "htmlClass": "pl",
+  "bodyClass": "body",
+  "img": {
+    "landscape_4x3": {
+      "src": "../../images/fpo_4x3.png",
+      "alt": "4x3 Image"
+    },
+    "landscape_16x9": {
+      "src": "../../../images/srijanhero.jpg",
+      "alt": "16x9 Image"
+    },
+    "square": {
+      "src": "../../images/fpo_square.png",
+      "alt": "Square Thumbnail"
+    },
+    "avatar": {
+      "src": "../../images/fpo_avatar.png",
+      "alt": "Person Name"
+    },
+    "rectangle": {
+      "src": "http://placeimg.com/400/300/tech",
+      "alt": "Rectangle"
+    },
+    "src": "../../images/fpo_4x3.png",
+    "alt": "4x3 Image"
+  },
+  "logo": "../../images/logo.svg",
+  "content_list": {
+    "label": "Content Listing Component",
+    "url": "../../images/srijanhero.jpg",
+    "author": "Author",
+    "tag": "tag",
+    "content": "Content Listing is a useful component, which allows the editor to list the teaser display of your article by mentioning the author's name or tags related to an article. Articles will be filtered automatically and displayed as a teaser."
+  },
+  "headline": {
+    "short": "Lorem ipsum dolor sit (37 characters)",
+    "medium": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
+  },
+  "excerpt": {
+    "short": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "medium": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "description": "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
+  "url": "#",
+  "name": {
+    "first": "Lacy",
+    "firsti": "L",
+    "middle": "Tommie",
+    "middlei": "T",
+    "last": "Way",
+    "lasti": "W"
+  },
+  "year": {
+    "long": "2013",
+    "short": "13"
+  },
+  "month": {
+    "long": "February",
+    "short": "Feb",
+    "digit": "02"
+  },
+  "dayofweek": {
+    "long": "Monday",
+    "short": "Mon"
+  },
+  "day": {
+    "long": "10",
+    "short": "10",
+    "ordinal": "th"
+  },
+  "hour": {
+    "long": "01",
+    "short": "1",
+    "military": "13",
+    "ampm": "pm"
+  },
+  "minute": {
+    "long": "20",
+    "short": "20"
+  },
+  "seconds": "31",
+  "author": {
+    "first_name": "Author",
+    "last_name": "Name"
+  },
+  "hero": true,
+  "emergency": false,
+  "touts": [
+    {},
+    {},
+    {}
+  ],
+  "latest_posts": [
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "quote": {
+    "quote": "The rebase command basically integrates changes from one branch into another. It is an alternative to the “merge” command. The difference between rebase and merge is that rebase rewrites the commit history and creates a linear succession of commits, while merging adds a new commit to the destination branch. The image bellow perfectly shows a visual representation of both processes.",
+    "field__label": "Ajanta Mendies",
+    "field__item": "field item"
+  },
+  "map": {
+    "title": "Taj Mahal: The symbol of love",
+    "subTitle": " India Taj Mahal is an exceptional beauty",
+    "location": " Taj Mahal",
+    "url": "https://maps.google.com/maps?hl=en&q=Agra&t=m&z=14&output=embed",
+    "body": "We are a digital transformation company helping enterprises build and modernize their digital systems",
+    "links": {
+      "url": "http://www.google.com",
+      "title": "Click Me"
+    }
+  },
+  "socialMedia":{
+    "type":"twitter",
+    "url":"https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+    "tweetUrl":"https://twitter.com/SecBernhardt/status/1270003344086622210?s=20"
+  },
+  "heroComponent": {
+    "heroAsset": {
+      "id": 2,
+      "image": "../../images/hero-banner.jpg",
+      "title": "Title 3",
+      "description": "Maecenas faucibus mollis interdum.",
+      "field_subhead": "Subhead 3",
+      "bgColor": "rgba(0, 249, 0, 0.37)",
+      "textPosition": "right",
+      "field_short_title": "Short Title 3",
+      "url": [
+        {
+          "link": "",
+          "title": "Link Text 3",
+          "video_url": 0
+        }
+      ]
+    }
+  },
+  "heroCarousel": {
+    "heroAssets": [
+      {
+        "id": 1,
+        "image": "../../images/hero-banner.jpg",
+        "title": "Title 3",
+        "detail_class": "hero_banner-body hero_media_content w-100 position-absolute text-center",
+        "description": "Maecenas faucibus mollis interdum.",
+        "field_subhead": "Subhead 3",
+        "bgColor": "rgba(0, 249, 0, 0.37)",
+        "textPosition": "right",
+        "field_short_title": "Short Title 3",
+        "url": [
+          {
+            "link": "",
+            "title": "Link Text 3",
+            "video_url": 0
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "image": "../../images/hero-banner.jpg",
+        "title": "Title 4",
+        "description": "Maecenas faucibus mollis interdum.",
+        "field_subhead": "Subhead 3",
+        "detail_class": "hero_banner-body hero_media_content w-100 position-absolute text-left",
+        "bgColor": "rgba(0, 249, 0, 0.37)",
+        "textPosition": "right",
+        "field_short_title": "Short Title 3",
+        "url": [
+          {
+            "link": "",
+            "title": "Link Text 3",
+            "video_url": 0
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "image": "../../images/hero-banner.jpg",
+        "title": "Title 4",
+        "description": "Maecenas faucibus mollis interdum.",
+        "field_subhead": "Subhead 3",
+        "detail_class": "hero_banner-body hero_media_content w-100 position-absolute text-right",
+        "bgColor": "rgba(0, 249, 0, 0.37)",
+        "textPosition": "right",
+        "field_short_title": "Short Title 3",
+        "url": [
+          {
+            "link": "",
+            "title": "Link Text 3",
+            "video_url": 0
+          }
+        ]
+      }
+    ]
+  },
+  "referenceCard": {
+    "data": [
+      {
+        "image": "../../images/ref1.png",
+        "title": "Future of Drupal: 7, 8 or just Drupal 9? testtt",
+        "path": "this is path",
+        "date": "12/05/1991",
+        "summary": "With Drupal’s commitment to reinventing itself to enable ambitious digital experiences, the community is getting ready for the launch of Drupal 9, and end-of-life for Drupal 7 and Drupal 8."
+      },
+      {
+        "image": "../../images/ref1.png",
+        "title": "Should Your Enterprise Go For a Headless Commerce Architecture?",
+        "path": "this is path",
+        "date": "13/05/1991",
+        "summary": "E-commerce enterprises looking to deliver seamless user experiences, often wonder how to do so. Is there a way that does not require them to invent their own IoT device or build back-end solutions from scratch?"
+      },
+      {
+        "image": "../../images/ref1.png",
+        "title": "Headless Commerce Architecture?",
+        "path": "this is path",
+        "date": "14/05/1991",
+        "summary": "Is there a way that does not require them to invent their own IoT device or build back-end solutions from scratch?"
+      }
+    ]
+  },
+  "faq": {
+    "element": [
+      {
+        "question": "question 01",
+        "answer": "<p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui.</p>"
+      },
+      {
+        "question": "question 02",
+        "answer": "<p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui.</p>"
+      },
+      {
+        "question": "question 03",
+        "answer": "<p>Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui.</p>"
+      }
+    ]
+  },
+  "qna": {
+    "question": "Drupal 2020 - What Do You Need to Expect?",
+    "answer": "<p>Remember how 2015 was filled with anticipation in the run up to the release of Drupal 8? Well,
+2020 is all set to be a repeat of that - the same rush, excitement, innovative work will be happening around Drupal 9. But that’s not the only thing to look forward to for Drupalers in 2020.
+    
+    From charting new growth paths, to ensuring an enhanced experience and easier adoption of Drupal for beginners, to creating closer integration with other technology frameworks - 2020 has a lot in store for Drupal. And here are the ones we are most excited about.</p>"
+  },
+  "galleryComponent": {
+    "items": [
+      {
+        "imageData": {
+          "name": "ezcontent_banner_sans_text.png",
+          "metatag": null
+        },
+        "file": {
+          "filename": "srijanhero.jpg",
+          "url": "../../images/srijanhero.jpg"
+        }
+      },
+      {
+        "imageData": {
+          "name": "create_content.png",
+          "metatag": null
+        },
+        "file": {
+          "filename": "create_content.png",
+          "url": "../../images/create_content.png"
+        }
+      },
+      {
+        "imageData": {
+          "name": "page_builder.png",
+          "metatag": null
+        },
+        "file": {
+          "filename": "page_builder.png",
+          "url": "../../images/page_builder.png"
+        }
+      },
+      {
+        "imageData": {
+          "name": "frontend_of_choice.png",
+          "metatag": null
+        },
+        "file": {
+          "filename": "srijanhero.jpg",
+          "url": "../../images/srijanhero.jpg"
+        }
+      },
+      {
+        "imageData": {
+          "name": "decoupled.png",
+          "metatag": null
+        },
+        "file": {
+          "filename": "decoupled.png",
+          "url": "../../images/decoupled.png"
+        }
+      },
+      {
+        "imageData": {
+          "name": "drupal_community.png",
+          "metatag": null
+        },
+        "file": {
+          "filename": "drupal_community.png",
+          "url": "../../images/drupal_community.png"
+        }
+      },
+      {
+        "imageData": {
+          "name": "ai_content.png",
+          "metatag": null
+        },
+        "file": {
+          "filename": "ai_content.png",
+          "url": "../../images/ai_content.png"
+        }
+      }
+    ],
+    "view_mode": {
+      "drupal_internal__id": "paragraph.gallery",
+      "label": "Gallery"
+    },
+    "type": "gallery",
+    "attributes": {
+      "field_body": {
+        "value": "<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.</p>\r\n",
+        "format": "basic_html",
+        "processed": "<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.</p>",
+        "summary": ""
+      },
+      "field_link": {
+        "uri": "http://google.com",
+        "title": "Click man",
+        "options": []
+      }
+    }
+  },
+  "galleryCarousel": {
+    "images": [
+      {
+        "url": "../../images/srijanhero.jpg"
+      },
+      {
+        "url": "../../images/srijanhero.jpg"
+      }
+    ],
+    "field_body": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
+  },
+  "paragraphAssets": {
+    "assets": [
+      {
+        "d_id": 1,
+        "videolinks": "https://www.youtube.com/embed/YE7VzlLtp-4"
+      },
+      {
+        "d_id": 2,
+        "imagePath": "../../images/drupal_8.png"
+      }
+    ]
+  },
+  "html": {
+    "data":"<h2>Drupal 9 Product Tracks</h2>
+      <p>The launch of Drupal 9 is also significant because this is the first time the community has a strategic roadmap for
+          how we want Drupal 9 to grow. Dries’ State of Drupal address in Drupal Amsterdam outlined the four product tracks
+          envisioned for D9:</p>
+      <ol>
+          <li><strong>Reduce the cost and effort i</strong>nvolved in managing a Drupal 9 website. So the focus will be on
+              introducing new features and functionalities that simplify website support, maintenance and updates -
+              configuration management, automated updates and more.</li>
+          <li><strong>Enhance the beginners’ experience</strong> with Drupal by making it simpler to install and get it
+              running out of the box. The first two initiatives in this track are two new themes - Olivero for the frontend
+              and Claro for admins.</li>
+          <li>Work towards ensuring an <strong>Open Web</strong> that’s accessible, secure, inclusive and interoperable. In
+              the next decade, the Drupal community will collectively ensure that their work - project, websites, solutions -
+              consistently meet these standards</li>
+          <li>Prepare Drupal to be one of the <strong>best structured data and content repositories</strong>, ready to work
+              seamlessly with a range of devices and delivery channels</li>
+      </ol>
+      <p>2020 will see these product tracks being actively discussed within the community and work starting on several new
+          initiatives.</p>
+      <h2>Drupal 8.8</h2>
+      <p>Drupal 8.8 was released on 4 December 2019 and sites on Drupal 8 can look forward to harnessing great new features
+          and functionalities in 2020. Some of the key upgrades are:</p>
+      <ol>
+          <li><strong>Media Library</strong> being marked as stable, so content writers and editors can add media content
+              right from the WYSIWYG editor</li>
+          <li><strong>Official support for Composer out-of-the-box</strong>, meaning Drupal is simple and easy to install and
+              update with Composer taking care of updating all third-party dependencies</li>
+          <li>The <strong>Automatic Update modole</strong> is available in early alpha stage and has a set of very convenient
+              features. It allows you to configure your site to display PSA messages for required updates or mail them
+              directly to the site admins. You can check if your site is ready for update, with all requisite file
+              permissions, and update your site with just a click, if all prerequisites are in place.</li>
+          <li>The <strong>JSON:API Explorer</strong> which is an interactive query builder to explore your JSON:API server,
+              strengthening Drupal’s positioning as an effective decoupled solution.</li>
+      </ol>
+      <h2>Decoupled Drupal</h2>
+      <p>Yes, Decoupled Drupal has been talked about for quite a few years now, but 2020 and the following decade will be when
+          it becomes extremely commonplace. This will be primarily due to the growth of a complete ecosystem of features and
+          solutions that make it easier to poll off decoupled Drupal solutions. </p>
+      <p>While the API-first initiative and the project around building a reusable component library are key to great
+          decoupled Drupal implementations, there are also third-party frameworks and solutions launched in 2019 that will
+          drive decoupled Drupal in 2020:</p>
+      <ol>
+          <li><strong><a >Acquia Content
+                      Cloud</a>:</strong> A platform that allows content creators to write, edit, and review content
+              independent of the channel where it will be published. The content created here can be pushed to moltiple
+              different channels simoltaneously or at different times, and will be automatically formatted to best fit the
+              channel. </li>
+          <li><strong><a >GatsbyJS</a>:</strong>
+              A React-based site generator that offers the perfect JAMstack for a headless Drupal architecture. GatsbyJS
+              drives greater site performance and smooth user experience. It offers a foll plugin library to allow almost any
+              kind of content to be polled in for site creation, via GraphQL. The not-so-steep learning curve and growing
+              community of developers means GatsbyJS will see higher adoption as enterprises try to get more done with Drupal.
+          </li>
+      </ol>
+      <h2>Growing the Drupal Community</h2>
+      <p>This decade is going to be special for us as well as Srijan puts in concerted efforts to grow the Drupal community in
+          India and Asia at large. As a part of this, we plan to:</p>
+      <ol>
+          <li>Commit greater number of resources to contributing to Drupal, working across a diverse range on ongoing
+              initiatives and Drupal 9.</li>
+          <li>Drive the Drupal India Association to bring structure and increased participation of different firms and
+              developers in the Indian Drupal community.</li>
+      </ol>
+      <p>Much like the last decade,
+    2020 and beyond will be marked by exciting new developments in Drupal. But unlike before,
+          these developments will not just be around core Drupal, but rather focussed on how Drupal will interact and operate
+          with other technology solutions and frameworks to solve key enterprise challenges. </p>
+      <p>What are you most excited about Drupal's future in 2020?</p>
+      <p>And if you are wondering how Drupal can help you solve a particolar challenge at your organization, <a>just drop us a line</a> and our Drupal experts will be in
+          touch.</p>
+      </div>
+      </div>"
+  },
+  "menu": {
+    "menuitems": [
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Home",
+        "class": "nav-link"
+      },
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Components",
+        "class": "nav-link"
+      }
+    ]
+  },
+ "footermenu": {
+    "footerBottom": [
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Privacy Policy",
+        "class": "nav-link"
+      },
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Terms of Service",
+        "class": "nav-link"
+      }
+    ],
+    "copy_right": {
+      "date": "2020",
+      "sitename": "Ezcontent",
+      "text": "Ltd. All rights reserved."
+    }
+  },
+   "footermenutop": {
+    "footerTop": [
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "About Us",
+        "class": "nav-link"
+      },
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Career",
+        "class": "nav-link"
+      }
+    ]
+  },
+  "socialmedia": {
+    "medialinks": [
+      {
+        "id": "github",
+        "url": "#",
+        "markup": "<span class=\"fa fa-github fa-2x\"></span>"
+      },
+      {
+        "id": "twitter",
+        "url": "#",
+        "markup": "<span class=\"fa fa-twitter fa-2x\"></span>"
+      }
+    ]
+  },
+  "list": {
+    "listitems": [
+      {
+        "list_item": "This is list item",
+        "class": "list-item"
+      },
+      {
+        "list_item": "This is list item",
+        "class": "list-item"
+      }
+    ]
+  },
+  "content": {
+    "title": "This is Title",
+    "title_class": "field--name-field-title",
+    "short_title": "This is sub title",
+    "short_title_class": "field--name-field-short-title",
+    "sub_head": "This is sub head",
+    "sub_head_class": "field--name-field-subb-head",
+    "description": "This is description text",
+    "descripton_class": "field--name-field-desc"
+  },
+  "embed": {
+    "link": "https://www.youtube.com/embed/Bsn7FC4FFjA"
+  },
+  "card": {
+    "title": "Create and publish great content easily",
+    "short_title": "Short Title",
+    "sub_head": "Sub Head",
+    "description": "Content creation and publishing don’t need to be chaotic. Build a rich
+                      content model with WYSIWYG, preview, layout builder, paragraphs, drag and
+                      drop the content wherever you like it.<br /> Create content with utmost ease!",
+    "link_text": "CTA Link",
+    "img_url": "../../images/create_content.png",
+    "img_alt": "image"
+  },
+  "address": "Srijan Technologies <br>7E Vandana Building <br>Tolstoy Rd, Atul Grove Road, <br>Janpath, Connaught Place, <br>New Delhi, Delhi 110001",
+  "data1": {
+    "copy_right": {
+      "date": "2020",
+      "sitename":"Ezcontent",
+      "text":"Ltd. All rights reserved."
+    }
+  }
+}

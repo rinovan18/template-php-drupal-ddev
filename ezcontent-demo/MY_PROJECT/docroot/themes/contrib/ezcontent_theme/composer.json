@@ -1,0 +1,17 @@
+{
+    "name": "srijanone/ezcontent_theme",
+    "description": "A Pattern lab based theme for EzContent Profile.",
+    "type": "drupal-theme",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/components": "^2.0-beta"
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "prefer-stable": true
+}

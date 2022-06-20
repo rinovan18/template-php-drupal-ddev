@@ -1,0 +1,179 @@
+@import 'variables';
+
+body {
+  color: $color-text;
+  font-family: $primary-font;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+caption {
+  font-family: $bold-font;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a {
+  color: $color-primary;
+
+  &:focus {
+    color: $color-secondary;
+  }
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+table {
+  thead {
+    border: 1px solid $color-grey-light-2;
+
+    tr {
+
+      td {
+        @include tablestyle;
+      }
+
+      th {
+        @include tablestyle;
+      }
+
+    }
+  }
+
+  tbody {
+    border: 1px solid $color-grey-light-2;
+
+    tr {
+
+      td {
+        @include tablestyle;
+      }
+
+      th {
+        @include tablestyle;
+      }
+
+    }
+  }
+
+  tfoot {
+    border: 1px solid $color-grey-light-2;
+
+    tr {
+
+      td {
+        @include tablestyle;
+      }
+
+      th {
+        @include tablestyle;
+      }
+
+    }
+  }
+
+}
+
+.nav {
+  &.tabs--primary {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+.main-container {
+  margin-top: 100px;
+  min-height: 40rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.paragraph {
+  margin-bottom: 30px;
+}
+
+.ui-dialog-position-side {
+  #drupal-off-canvas {
+    table {
+      margin: 0;
+      min-width: 100%;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    td.field-multiple-drag {
+      display: none !important;
+    }
+
+    .dialog-cancel {
+      background: $color-white-light;
+      border-radius: 3px;
+      clear: left;
+      color: $color-grey-light-3;
+      display: inline-block;
+      line-height: 20px;
+      margin: 8px 0;
+      margin-left: 1px;
+      padding: 2px 5px;
+      text-decoration: none;
+    }
+
+    button[type="submit"] {
+      background: $color-white-light;
+      color: $color-grey-light-3;
+      margin: 8px 0;
+      padding: 2px 5px;
+
+      span.glyphicon {
+        background: transparent;
+        color: $color-grey-light-3;
+      }
+    }
+
+    .paragraphs-actions {
+      position: absolute;
+      right: 0;
+
+      button[type="submit"] {
+        height: 21px;
+        margin-left: 2px;
+        top: 0;
+      }
+
+      ul.dropbutton {
+
+        li button[type="submit"] {
+          background: transparent;
+          color: $color-white;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1366px;
+  width: 100%;
+}

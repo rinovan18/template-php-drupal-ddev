@@ -1,0 +1,14 @@
+name: EZContent Preview
+type: module
+description: Provide decoupled preview
+core_version_requirement: ^8.8 || ^9
+package: EZContent API
+configure: ezcontent.preview.config
+dependencies:
+  - access_unpublished:access_unpublished
+  - tokenuuid:tokenuuid
+
+# Information added by Drupal.org packaging script on 2022-02-03
+version: '2.1.0-alpha5'
+project: 'ezcontent_api'
+datestamp: 1643879106

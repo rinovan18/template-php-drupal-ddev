@@ -1,0 +1,9 @@
+name: 'Media Twitter Feature'
+type: module
+description: 'Provides Twitter media type.'
+package: EZContent Media
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - ezcontent:ezcontent_media
+  - ezcontent:ezcontent_user
+  - media_entity_twitter:media_entity_twitter
